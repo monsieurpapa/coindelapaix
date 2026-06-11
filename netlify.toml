@@ -1,0 +1,22 @@
+# Configuration Netlify — Coin De La Paix
+# Site statique : aucun build nécessaire, on publie le dossier "public".
+
+[build]
+  publish = "public"
+
+# Ancien lien du menu → page d'accueil (le menu EST la page d'accueil)
+[[redirects]]
+  from = "/menu.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/menu"
+  to = "/"
+  status = 301
+
+# Raccourci pratique pour la carte QR
+[[redirects]]
+  from = "/qr"
+  to = "/CoinDeLaPaix_QRCode.html"
+  status = 301
